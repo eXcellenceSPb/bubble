@@ -31,7 +31,7 @@ public class Enemy {
 				y = 0;
 				r = 30;
 				health = 1;
-				speed = Math.random() * 10;
+				speed = Math.random() * 3;
 				lifecycle = (int)Math.random()*60;
 				dx = Math.sin(angle) * speed;
 				dy = Math.cos(angle) * speed;
@@ -40,7 +40,7 @@ public class Enemy {
 				y = 0;
 				r = 15;
 				health = 2;
-				speed = Math.random() * 15;
+				speed = Math.random() * 5;
 				lifecycle = (int)Math.random()*80;
 				dx = Math.sin(angle) * speed;
 				dy = Math.cos(angle) * speed;
@@ -50,7 +50,7 @@ public class Enemy {
 				y = 0;
 				r = 7;
 				health = 3;
-				speed = Math.random() * 25;
+				speed = Math.random() * 7;
 				lifecycle = (int)Math.random()*100;
 				dx = Math.sin(angle) * speed;
 				dy = Math.cos(angle) * speed;
