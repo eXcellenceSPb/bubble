@@ -3,7 +3,7 @@ import java.awt.*;
 import java.lang.instrument.Instrumentation;
 import java.util.ArrayList;
 
-public class Enemy implements Runnable{
+public class Enemy {
 	public static ArrayList<Enemy> enemys;
 	private static double x;
 	private static double y;
@@ -103,13 +103,5 @@ public class Enemy implements Runnable{
 		g.setStroke(new BasicStroke(3));
 		g.setColor(color.darker());
 		g.drawOval((int)(x - r),(int) (y - r), 2 * r, 2 * r);
-	}
-
-	@Override
-	public void run() {
-		enemys = new ArrayList<Enemy>();
-		for(int i = 0;i<enemys.size();i++) {
-			enemys.get(i).update();
-		}
 	}
 }
